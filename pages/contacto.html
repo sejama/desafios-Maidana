@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOS® | Contacto</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="grid-nav">
+        <img class="portada" src="../img/membrete_superior_web.jpg" alt="Logo" title="Tapones Fos">
+        <nav>
+            <ul class="nav-ul-flex">
+                <li class="nav-li-flex">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-li-flex">
+                    <a href="./empresa.html">La Empresa</a>
+                </li>
+                <li class="nav-li-flex">
+                    <a href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-li-flex">
+                    <a href="./preguntas.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-li-flex">
+                    <a class="active" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid-main">
+        <div class="bloque">
+        <h1>Contáctenos</h1>
+        <form class="formulario-contacto" action="" method="post"></form>
+        <fieldset >
+            <fieldset>
+                <legend>Datos para contactarnos</legend>
+                <div class="formulario-flex">
+                    <label for="nombre">Nombre y Apellido: </label>
+                    <input type="text" name="" id="nombre" placeholder="Nombre y Apellido" required>
+                </div>
+                <div class="formulario-flex">
+                    <label for="correo">Correo: </label>
+                    <input type="email" name="" id="correo" placeholder="correo@ejemplo.com" minlength="6" required>
+                </div>
+                <div class="formulario-flex">
+                    <label for="tel">Telefono: </label>
+                    <input type="tel" name="" id="tel" placeholder="3425208943" required>
+                </div>
+                <div class="formulario-flex">
+                <label for="horadesde">Horario que podriamos llamar desde 
+                    <input type="time" id="horadesde" name="" required>
+                    <label for="horahasta"> hasta </label>
+                    <input type="time" id="horahasta" name="" required> </label>
+                </div>
+                <div class="formulario-flex">
+                    <label for="mensaje">Mensaje: </label>
+                </div>
+                <div class="formulario-flex">
+                    <textarea name="" id="mensaje" cols="30" rows="5" placeholder="Mensaje para el correo" required></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Datos complementarios</legend>
+                <div class="formulario-flex">
+                    <label for="opcion">Desea recibir Información sobre nuestros productos:
+                    <label for="">SI</label>
+                    <input type="radio" name="opcion" id="" value="SI">
+                    <label for="">NO</label>
+                    <input type="radio" name="opcion" id="" value="NO"></label>
+                </div>
+                <div class="formulario-flex">
+                    <label for="">Seleccionar si desea recibir correos con información: 
+                    <select name="Tipo de Información" id="">
+                        <option value=0>Ninguna</option>
+                        <option value=1>Información de ofertas</option>
+                        <option value=2>Información de ajuste de precios</option>
+                        <option value=3>Todo tipo de información</option>
+                    </select></label>
+                </div>
+                <div class="formulario-flex">
+                    <label for="cantidad">Frecuancia de recepcion de la información (por mes): 
+                    <input type="number" name="cantidad" id="" min="0" max="31" value=0> </label>
+                </div>
+            </fieldset>
+            <div>
+                <input type="reset" value="Limpiar">
+                <input type="button" value="Enviar">
+            </div>
+        </fieldset>
+        </form>
+        <h2>Nos encontras en</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13589.177102494272!2d-60.7163601!3d-31.6257922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacdf1530c00bd035!2sFos!5e0!3m2!1ses-419!2sar!4v1646836004733!5m2!1ses-419!2sar" 
+        width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    </main>
+    
+    <footer class="grid-footer">
+        <p>::FOS ®:: Tapones de Acero Inoxidable - Todos los derechos reservados- 2022 - info@taponesfos.com.ar - Tel: +54 342 455 0276</p>
+    </footer>
+</body>
+</html>
