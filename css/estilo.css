@@ -2,14 +2,18 @@ html{
     text-align: center;
 }
 body{
-    background-color: rgb(1, 80, 149);
+    /*background-color: rgb(1, 80, 149);*/
+    background-image: linear-gradient(rgb(1, 80, 149) , rgb(6, 61, 109));
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 .active{
     background-color: #CDD0D2;
     color: rgb(1, 80, 149);
+    animation: headShake; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 }
+
 @media screen and (max-width: 549px) { 
     img{
         width: 100%;
@@ -358,6 +362,23 @@ body{
         border-width: 0.5px;
         border-radius: 25px;
         font-size: 1rem;
+    }
+    .nav-ul-flex a:hover{
+        font-size: 1.2rem;
+    }
+    .portada, .main__img, iframe{
+        animation-duration: 2s;
+        animation-name: aparecer;
+        }
+    @keyframes aparecer {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    input { 
+        transition: all 1s;
+        }
+    input:focus{
+        font-size: 1.2rem;
     }
     .lista-flex{
         display: flex;
