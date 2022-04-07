@@ -10,8 +10,8 @@ body{
 .active{
     background-color: #CDD0D2;
     color: rgb(1, 80, 149);
-    animation: headShake; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+    animation: headShake; 
+    animation-duration: 2s; 
 }
 
 @media screen and (max-width: 549px) { 
