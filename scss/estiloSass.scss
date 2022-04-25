@@ -1,22 +1,27 @@
+@import "colores";
+@import "fuente";
+
 html{
     text-align: justify;
 }
 body{
-    background-color: #015095;
+    background-color: $fondo_color;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-family;
 }
 .bg-light {
     --bs-bg-opacity: 0;
 }
+.navbar-light .navbar-nav {
+    .nav-link.active, .show>.nav-link{
+        color: $active;
+    }
+}
 .navbar-light .navbar-nav .nav-link, h1, h2, h3, p, li, footer, label, th, td{
-    color: #CDD0D2;
+    color: $letra_color;
 }
 .mb-3{
     text-align: left;
-}
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    color: white;
 }
 .navbar>.container-fluid {
     display: flex;
@@ -27,9 +32,9 @@ body{
     flex-direction: column;
 }
 .list-group-item, .accordion-button, .accordion-button:focus, .accordion-body{
-    background-color:#015095;
-    color: #CDD0D2;
+    background-color: $fondo_color;
+    color: $letra_color;
 }
 .table{
-    color: white;
+    color: $active;
 }
