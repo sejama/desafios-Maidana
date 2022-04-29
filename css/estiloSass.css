@@ -32,3 +32,49 @@ body {
 
 .table {
   color: white; }
+
+/*Mixins*/
+/*Extendes*/
+.boton, .limpiar, .enviar {
+  height: 2rem;
+  width: 5rem;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black; }
+
+.limpiar {
+  background-color: green; }
+
+.enviar {
+  background-color: blue;
+  color: #CDD0D2; }
+
+.div--1 {
+  height: 100rem;
+  width: 100rem;
+  background-color: white; }
+
+.div--2 {
+  height: 100rem;
+  width: 100rem;
+  background-color: blue; }
+
+.div--3 {
+  height: 100rem;
+  width: 100rem;
+  background-color: green; }
+
+.div--4 {
+  height: 100rem;
+  width: 100rem;
+  background-color: yellow; }
+
+.div--5 {
+  height: 100rem;
+  width: 100rem;
+  background-color: black; }
+
+.caja {
+  background-color: white; }

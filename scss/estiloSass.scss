@@ -38,3 +38,44 @@ body{
 .table{
     color: $active;
 }
+/*Mixins*/
+@mixin tamano($width, $height) {
+    height: $height;
+    width: $width;
+}
+/*Extendes*/
+.boton {
+    @include tamano(5rem, 2rem);
+    background-color:white;
+    text-align:center;
+    color:black;
+    border-radius:20px;
+    border:1px solid black;
+}
+.limpiar{
+    @extend .boton;
+    background-color:green;
+}
+.enviar{
+    @extend .boton;
+    background-color:blue;
+    color: $letra_color;
+}
+$mapa:(
+1: white,
+2: blue,
+3: green,
+4: yellow,
+5: black,
+); 
+
+@each $valor, $clave in $mapa{
+    .div--#{$valor} {
+    @include tamano(100rem, 100rem);
+    background-color: $clave;
+    }
+}
+
+.caja{
+    background-color: map-get($mapa, 1);
+}
